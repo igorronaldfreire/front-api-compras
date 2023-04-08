@@ -34,7 +34,6 @@ export function AuthProvider({ children }) {
 
       localStorage.setItem('user', response.data.user.usuario);
       localStorage.setItem('token', response.data.token);
-        <Navigate to="/home" />;
     } catch (e) {
       console.log(e);
     }
